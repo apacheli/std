@@ -25,6 +25,8 @@ console.log(color.rgb(0xff0000));
 
 ### Bun
 
+Add from GitHub:
+
 ```sh
 bun add https://github.com/apacheli/std
 ```
@@ -38,6 +40,58 @@ console.log(color.rgb(0xff0000));
 ## Modules
 
 - [`ansi`](lib/ansi.js)
+  - `ansi.code(str, a, b)`
+  - `ansi.codes(str, a, b)`
+  - `ansi.fg(str, c)`
+  - `ansi.bg(str, c)`
+  - `ansi.fgRgb(str, r, g, b)`
+  - `ansi.bgRgb(str, r, g, b)`
+  - `ansi.reset(str)`
+  - `ansi.bold(str)`
+  - `ansi.dim(str)`
+  - `ansi.italic(str)`
+  - `ansi.underline(str)`
+  - `ansi.blink(str)`
+  - `ansi.invert(str)`
+  - `ansi.hide(str)`
+  - `ansi.strike(str)`
+  - `ansi.black(str)`
+  - `ansi.red(str)`
+  - `ansi.green(str)`
+  - `ansi.yellow(str)`
+  - `ansi.blue(str)`
+  - `ansi.magenta(str)`
+  - `ansi.cyan(str)`
+  - `ansi.white(str)`
+  - `ansi.bgBlack(str)`
+  - `ansi.bgRed(str)`
+  - `ansi.bgGreen(str)`
+  - `ansi.bgYellow(str)`
+  - `ansi.bgBlue(str)`
+  - `ansi.bgMagenta(str)`
+  - `ansi.bgCyan(str)`
+  - `ansi.bgWhite(str)`
+  - `ansi.overline(str)`
+  - `ansi.brBlack(str)`
+  - `ansi.brRed(str)`
+  - `ansi.brGreen(str)`
+  - `ansi.brYellow(str)`
+  - `ansi.brBlue(str)`
+  - `ansi.brMagenta(str)`
+  - `ansi.brCyan(str)`
+  - `ansi.brWhite(str)`
+  - `ansi.bgBrBlack(str)`
+  - `ansi.bgBrRed(str)`
+  - `ansi.bgBrGreen(str)`
+  - `ansi.bgBrYellow(str)`
+  - `ansi.bgBrBlue(str)`
+  - `ansi.bgBrMagenta(str)`
+  - `ansi.bgBrCyan(str)`
+  - `ansi.bgBrWhite(str)`
+  - `ansi.gray(str)` (same as `ansi.brBlack`)
+  - `ansi.grey(str)` (same as `ansi.brBlack`)
+  - `ansi.bgGray(str)` (same as `ansi.bgBrBlack`)
+  - `ansi.bgGrey(str)` (same as `ansi.bgBrBlack`)
 - [`args_parser`](lib/args_parser.js)
   - `args_parser.parse(s)`
   - `args_parser.parseArgs(list)`
@@ -51,8 +105,10 @@ console.log(color.rgb(0xff0000));
   - `color.hsvToRgb(h, s, v)`
 - [`flags`](lib/flags.js)
   - `flags.flags(list, table, x)`
+  - `flags.flagsRemove(list, table, x)`
   - `flags.flagsAll(table, x)`
   - `flags.flagsTable(table, x)`
+  - `flags.flagsList(table, x)`
 - [`event_dispatcher`](lib/event_dispatcher.js)
   - `EventDispatcher`
     - `EventDispatcher.listen(event, listener)`
